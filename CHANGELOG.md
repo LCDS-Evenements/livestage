@@ -5,6 +5,12 @@
 
 ### Added
 
+- ✨ CustomButton component [[6ef2703](https://github.com/LCDS-Evenements/livestage/commit/6ef27031a3cc9002093458c84c797f1e376c0d67)]
+- ✨ Input component [[870c25f](https://github.com/LCDS-Evenements/livestage/commit/870c25f21b43ea65247a5ed8bcdcb94d46e3977e)]
+- ✨ Function to interact with the async storage [[bc4347e](https://github.com/LCDS-Evenements/livestage/commit/bc4347e26b459507d4c0b35790ca3343541e4b1b)]
+- ✨ Add the connection page [[12ed261](https://github.com/LCDS-Evenements/livestage/commit/12ed261d6d734736c96c4bb90d704e5c7c93a8e8)]
+- ➕ AsyncStorage bouncy checkbox [[d00f9c0](https://github.com/LCDS-Evenements/livestage/commit/d00f9c0b346ebd65f23f5a1a8161bbc3190eac0c)]
+- 🔊 Update logs [[bcc6687](https://github.com/LCDS-Evenements/livestage/commit/bcc6687058993546d8467bc6af4999c5e1600ab2)]
 - ✨ Add the LoadingPage [[461221b](https://github.com/LCDS-Evenements/livestage/commit/461221b728794e966b9fcdfd546720acf5e5708b)]
 - ✨ Routing is working [[d10207e](https://github.com/LCDS-Evenements/livestage/commit/d10207ea3895eab097689970a7ac84aab0570515)]
 - ➕ React native router stack [[0da6822](https://github.com/LCDS-Evenements/livestage/commit/0da68228c2e4058941f807349c066cc0f38bfa15)]
