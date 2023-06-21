@@ -5,6 +5,8 @@
 
 ### Added
 
+- ➕ Expo dependencies [[86fb47b](https://github.com/LCDS-Evenements/livestage/commit/86fb47b8d0f42259d7ac3b009d2552e45e17f76b)]
+- 🔊 Update logs [[17f2de6](https://github.com/LCDS-Evenements/livestage/commit/17f2de6fe6b96f65e84781582a76e65e1349439d)]
 - ✨ CustomButton component [[6ef2703](https://github.com/LCDS-Evenements/livestage/commit/6ef27031a3cc9002093458c84c797f1e376c0d67)]
 - ✨ Input component [[870c25f](https://github.com/LCDS-Evenements/livestage/commit/870c25f21b43ea65247a5ed8bcdcb94d46e3977e)]
 - ✨ Function to interact with the async storage [[bc4347e](https://github.com/LCDS-Evenements/livestage/commit/bc4347e26b459507d4c0b35790ca3343541e4b1b)]
