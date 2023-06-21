@@ -5,8 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { StatusBar } from 'expo-status-bar'
 
 //Pages
-import Home from './pages/Home'
-import Test from './pages/Test'
+import LoadingPage from './pages/LoadingPage'
 
 const App = () => {
   const Stack = createNativeStackNavigator()
@@ -18,8 +17,7 @@ const App = () => {
           headerShown: false,
         }}
       >
-        <Stack.Screen name='Home' component={Home} />
-        <Stack.Screen name='Test' component={Test} />
+        <Stack.Screen name='LoadingPage' component={LoadingPage} />
       </Stack.Navigator>
       <StatusBar style='auto' />
     </NavigationContainer>
