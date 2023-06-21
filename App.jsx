@@ -6,6 +6,7 @@ import { StatusBar } from 'expo-status-bar'
 
 //Pages
 import LoadingPage from './pages/LoadingPage'
+import Connection from './pages/Connection'
 
 const App = () => {
   const Stack = createNativeStackNavigator()
@@ -18,6 +19,7 @@ const App = () => {
         }}
       >
         <Stack.Screen name='LoadingPage' component={LoadingPage} />
+        <Stack.Screen name='Connection' component={Connection} />
       </Stack.Navigator>
       <StatusBar style='auto' />
     </NavigationContainer>
