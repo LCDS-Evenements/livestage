@@ -1,5 +1,5 @@
 //Librairies
-import { View, Text, StyleSheet, Image, Alert } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
 import React, { useState } from 'react'
 import BouncyCheckbox from 'react-native-bouncy-checkbox'
 
@@ -12,16 +12,21 @@ import { storeData } from '../lib/utils/storage'
 //Components
 import Input from '../lib/components/Input'
 import CustomButton from '../lib/components/CustomButton'
+import SimpleChoice from '../lib/components/PopUp/SimpleChoice'
 
 const Connection = ({ navigation }) => {
   const [checked, setChecked] = useState(true)
   const [username, setUsername] = useState('')
+  const [simpleChoice, setSimpleChoice] = useState(false)
+  const [simpleChoiceText, setSimpleChoiceText] = useState('')
 
   const verifyBeforeNavigate = () => {
     if (username === '') {
-      Alert.alert('Erreur', "Veillez renseigner un nom d'utilisateur.")
+      setSimpleChoice(true)
+      setSimpleChoiceText(`Tu n'as pas choisis de nom d'utilisateur`)
     } else if (checked) {
-      Alert.alert('Erreur', 'Veillez accepter les conditions d’utilisation.')
+      setSimpleChoice(true)
+      setSimpleChoiceText(`Tu n'as pas accepté les conditions d'utilisation`)
     } else {
       navigation.navigate('Home')
       storeData('username', username)
@@ -65,6 +70,14 @@ const Connection = ({ navigation }) => {
           onPress={verifyBeforeNavigate}
         />
       </View>
+      <SimpleChoice
+        text={simpleChoiceText}
+        button={`D'accord`}
+        active={simpleChoice}
+        toggleActive={() => {
+          setSimpleChoice(false)
+        }}
+      />
     </View>
   )
 }
