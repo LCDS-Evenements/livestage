@@ -10,9 +10,9 @@ import logo from '../assets/LOGO_blanc.png'
 import { storeData } from '../lib/utils/storage'
 
 //Components
-import Input from '../lib/components/Input'
-import CustomButton from '../lib/components/CustomButton'
-import SimpleChoice from '../lib/components/PopUp/SimpleChoice'
+import Input from '../lib/components/atoms/Input'
+import CustomButton from '../lib/components/atoms/CustomButton'
+import SimpleChoice from '../lib/components/atoms/popup/SimpleChoice'
 
 const Connection = ({ navigation }) => {
   const [checked, setChecked] = useState(true)
